@@ -51,6 +51,7 @@ body{
   color: #75B79E;
   font-size: 56px;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .cards_container{
@@ -60,4 +61,42 @@ body{
   justify-content: center;
   flex-wrap: wrap;
   gap: 34px;
+}
+
+@media (max-width: 872px) {
+  .cards_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 34px;
+  }
+}
+
+@media (max-width: 550px) {
+  .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+    font-family: "Roboto",sans-serif;
+    font-weight: 700;
+    color: #75B79E;
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 335px) {
+  .cards_container{
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 34px;
+  }
 }
